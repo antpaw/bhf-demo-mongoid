@@ -4,3 +4,8 @@ development:
       database: bhf-demo-mongoid
       hosts:
         - localhost:27017
+
+production:
+  uri: <%= ENV['MONGOHQ_URL'] %>
+  username: heroku_user
+  password: heroku_db_pw

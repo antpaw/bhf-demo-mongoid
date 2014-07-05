@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'mongoid'
+gem 'mongo_mapper'
+gem 'bson_ext'
+
 
 gem 'rails'
 
