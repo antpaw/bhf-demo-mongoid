@@ -1,0 +1,44 @@
+pages:
+
+- statics: # Page Statics
+  - statics: # bhf can work from this point on because there is a model named Static
+      table:
+        types:
+          content: text
+
+- posts: # Page Posts
+  - posts:
+      table:
+        # default_scope hides some posts so we need a different scope
+        source: all_posts
+        
+        # columns to display
+        display: [_id, headline, subheadline, content, category, published, published_at]
+        types:
+          content: text
+      form:
+        # fields to display
+        display: [_id, category, author, headline, subheadline, content, published, published_at]
+        types:
+          # change content field from a textarea to a markdown wysiwyg
+          content: markdown
+
+- settings: # Page Settings
+  - category: # bhf can work from this point on because there is a model named Static
+
+  - authors:
+      table:
+        # allow to sort the entries via drag and drop (make sure the default_scope order by position)
+        sortable: position
+        # hide the delete button
+        hide_delete: true
+      form:
+        # fields to display
+        display: [_id, name, job_title, email, addresses]
+        # links the addresses relation to the bhf's platform "addresses" which is definded below
+        links:
+          addresses: addresses
+
+  - addresses:
+      # bhf will initially try to query because "Address" but it doesn't exist, this tells the actual class name
+      model: "Author::Address"

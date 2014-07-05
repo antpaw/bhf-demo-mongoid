@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: bhf-demo-mongoid
+      hosts:
+        - localhost:27017
