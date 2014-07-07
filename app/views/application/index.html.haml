@@ -9,7 +9,7 @@
       .row
         .col-md-9
           .bs-docs-section
-            %h1.page-header bhf demo
+            %h1.page-header bhf demo mongoid
             
             %p.lead This is a very simple Ruby on Rails project that demonstrates the <strong>bhf</strong> admin interface.
             
@@ -21,16 +21,20 @@
               <br>
               password: <strong>bhf</strong>
             
-            %p.lead Important file in this project:
+            %p.lead Important files in this project:
             %ul
               %li.lead
-                %a{href: 'https://github.com/antpaw/bhf-demo/blob/master/config/bhf.yml'} bhf.yml config
+                %a{href: 'https://github.com/antpaw/bhf-demo-mongoid/blob/master/config/bhf.yml'} bhf.yml config
               %li.lead
-                %a{href: 'https://github.com/antpaw/bhf-demo/blob/master/config/routes.rb'} routes.rb
+                %a{href: 'https://github.com/antpaw/bhf-demo-mongoid/blob/master/app/models/post.rb'} post.rb
               %li.lead
-                %a{href: 'https://github.com/antpaw/bhf-demo/blob/master/app/controllers/admin_controller.rb'} admin_controller.rb for authentification
-              %li.lead
-                %a{href: 'https://github.com/antpaw/bhf-demo/blob/master/config/initializers/bhf.rb'} bhf.rb initial settings
+                %a{href: 'https://github.com/antpaw/bhf-demo-mongoid/blob/master/config/initializers/bhf.rb'} bhf.rb initial settings
+
+
+            %hr.sep_hr
+            
+            %h3= link_to 'bhf Guide and Documentation', 'https://antpaw.github.com/bhf/', class: 'btn btn-sec big_button'
+            %h3= link_to 'This App on GitHub', 'https://github.com/antpaw/bhf-demo-mongoid/', class: 'btn btn-sec big_button'
 
 
             %hr.sep_hr
