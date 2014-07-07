@@ -13,12 +13,12 @@ pages:
         source: all_posts
         
         # columns to display
-        display: [_id, headline, subheadline, content, category, published, published_at]
+        display: [_id, headline, subheadline, content, category, tags, published, published_at]
         types:
           content: text
       form:
         # fields to display
-        display: [_id, category, author, headline, subheadline, content, published, published_at]
+        display: [_id, category, author, headline, subheadline, content, tags, published, published_at]
         types:
           # change content field from a textarea to a markdown wysiwyg
           content: markdown

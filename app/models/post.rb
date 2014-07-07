@@ -7,6 +7,7 @@ class Post
   field :content, type: String
   field :published, type: Boolean
   field :published_at, type: DateTime
+  field :tags, type: Array
   
   belongs_to :category
   belongs_to :author

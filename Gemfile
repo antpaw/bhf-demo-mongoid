@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'rails', '4.1.4'
+
 gem 'mongoid'
 gem 'mongo_mapper'
 gem 'bson_ext'
-
-
-gem 'rails'
 
 gem 'uglifier'
 
