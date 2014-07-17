@@ -1,5 +1,6 @@
 en:
   bhf:
+    page_title: bhf demo mongoid
     platforms:
       posts:
         infos:
